@@ -1,0 +1,241 @@
+:root {
+    --NAVBGCOLOR: #a51c30;
+    --NAVCOLOR: #fff;
+    --CARDBGCOLOR: #f9f3e9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+nav {
+    background-color: var(--NAVBGCOLOR);
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 8px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    gap: 10px;
+}
+
+#second-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+
+li img {
+    height: 70px;
+    margin: 0;
+
+}
+
+li a {
+    text-decoration: none;
+    color: var(--NAVCOLOR);
+    font-size: 2rem;
+}
+
+li a:visited {
+    text-decoration: none;
+    color: var(--NAVCOLOR);
+}
+
+main img {
+    height: auto;
+    width: 100%;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.fixed button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--NAVBGCOLOR);
+    color: var(--NAVCOLOR);
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.schools {
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.schools div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 150px;
+}
+
+.schools div img {
+    width: 15%;
+    height: auto;
+    min-width: 200px;
+}
+
+#about {
+    text-align: center;
+}
+
+.inside {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.first {
+    font-size: 20px;
+    width: 60%;
+}
+
+.first p a {
+    text-decoration: none;
+    color:var(--NAVBGCOLOR);
+}
+
+.first p a:visited {
+    color: var(--NAVBGCOLOR);
+}
+
+.second {
+    display: flex;
+    flex-direction: row;
+}
+
+.second img {
+    width: 10%;
+    height: 19%;
+    min-width: 120px;
+}
+
+.second #third {
+    display: flex;
+    flex-direction: column;
+}
+
+.last {
+    text-align: left;
+    margin-top: 8px;
+}
+
+.card {
+    background-color: var(--CARDBGCOLOR);
+    width: 22%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 5%;
+}
+
+.card img {
+    width: 22%;
+    height: auto;
+    padding-left: 40px;
+    min-width: 85px;
+}
+
+.card p {
+    font-size: 20px;
+    width: 100%;
+}
+
+.end {
+    color: var(--NAVBGCOLOR);
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #202020;
+    color: white;
+    padding-bottom: 70px;
+}
+
+footer .headings {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+footer .headings h4 {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.first-heading, .second-heading, .third-heading, .forth-heading, .fifth-heading {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .headings a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+footer .headings a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    #second-list {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .inside {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .schools div {
+        justify-content: center;
+    }
+
+    .second {
+        flex-direction: column;
+    }
+
+    footer .headings {
+        flex-direction: column;
+        align-items: center;
+    }
+}

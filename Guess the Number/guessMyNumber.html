@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Number</title>
+    <link rel="stylesheet" href="guessMyNumber.css">
+</head>
+<body>
+    <h1>Guess My Number!</h1>
+    <h3>(Between 1 and 20)</h3>
+    <h1 id="answer-el">?</h1>
+    <h1 id="result-el">Start guessing...</h1>
+    <input type="number">
+    <button onclick="checkNumber()">Check</button>
+    <h2 id="score-el">Score: </h2>
+    <h2 id="highscore-el">Highscore: </h2>
+    <button id="again-btn" onclick="playAgain()">Again</button>
+
+    <script src="guessMyNumber.js"></script>
+</body>
+</html>

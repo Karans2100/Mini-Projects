@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.921);
+    color: whitesmoke;
+    text-align: center;
+}
+
+button {
+    width: 75px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 21, 0);
+    color: white;
+    font-weight: bold;
+}
+
+#again-btn {
+    background-color: rgb(230, 30, 30);
+}
+
+input {
+    height: 40px;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 8px;
+    outline: none;
+    font-size: larger;
+}

@@ -1,0 +1,284 @@
+* {
+    box-sizing: content-box;
+}
+
+body, html {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #000000;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    height: 6rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div {
+    font-size: x-large;
+}
+
+.left {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 20%;
+    justify-content: space-evenly;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.help:hover {
+    text-decoration: underline;
+}
+
+.right {
+    font-weight: bolder;
+    min-width: 32%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.hamburger {
+    position: absolute;
+    display: none;
+    right: 3%;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+
+.popdown {
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.popdown a:hover {
+    color: gray;
+}
+
+hr {
+    width: 50%;
+}
+
+.request {
+    font-size: x-large;
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+    border-radius: 8px;
+    min-height: 45px;
+    width: 14rem;
+    min-width: auto;
+    margin-right: 15px;
+}
+
+.signIn {
+    font-size: x-large;
+    background-color: #4C5FD5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    height: 45px;
+    width: 100px;
+    min-width: auto;
+}
+
+.signIn:hover {
+    background-color: #fff;
+    color: #000000;
+}
+
+.upper {
+    text-align: center;
+    background-color: #dadbf1;
+    width: 100%;
+    font-size: xx-large;
+}
+
+.upper h1 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding-top: 5rem;
+    background-color: #dadbf1;
+    font-weight: 500;
+    font-size: 235%;
+}
+
+.upper input {
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid blue;
+    width: 58%;
+    height: 60px;
+    font-size: 25px;
+    box-shadow: #000000;
+    margin-bottom: 120px;
+}
+
+.lower {
+    margin-top: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.lower div {
+    margin-bottom: 3rem;
+    width: 25%;
+    min-width: 260px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 250;
+    display: flex;
+    flex-direction: row;
+}
+
+.lower div h4 {
+    margin-top: 3rem;
+    margin-bottom: 15px;
+}
+
+.lower div a {
+    font-size: 90%;
+    color: rgb(70, 70, 181);
+}
+
+.lower div a:hover {
+    text-decoration: underline;
+}
+
+.lower div img {
+    display: inline-block;
+    object-fit: contain;
+    margin-top: 0;
+    margin-right: 1rem;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+}
+
+footer span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 20px;
+}
+
+footer div h4 {
+    margin-bottom: 12px;
+}
+
+footer div h5 {
+    font-size: medium;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+footer div a {
+    font-weight: normal;
+    font-size: medium;
+}
+
+footer div a:hover {
+    text-decoration: underline;
+}
+
+.copyright-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: inherit;
+    padding-top: 25px;
+}
+
+.copyright {
+    background-color: inherit;
+    font-size: large;
+    font-weight: bold;
+    padding-right: 40px;
+    padding-bottom: 60px;
+}
+
+.help-btn {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #4C5FD5;
+    width: 80px;
+    height: 40px;
+    font-size: large;
+    font-weight: bold;
+    border-color: #dadbf1;
+}
+
+@media screen and (max-width: 1150px) {
+    .request {
+        display: none;
+    }
+
+    .signIn {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline-block;
+    }
+
+    .hamburger span {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .request {
+        display: inline-block;
+    }
+
+    .popdown {
+        display: none !important;
+    }
+
+    nav {
+        height: 6rem !important;
+    }
+
+    .signIn {
+        display: inline-block;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}

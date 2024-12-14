@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions</title>
+    <link rel="icon" type="image/x-icon" href="https://pdeu.ac.in/pdpu_small.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="css/admissions.css">
+<body>
+    <header>
+        <nav id="nav">
+            <ul>
+                <li><img src="https://pdeu.ac.in/pdpu_small.png" alt="PDEU Logo"></li>
+                <li><a href="home.html">PDEU</a></li>
+            </ul>
+            <ul id="second-list">
+                <li><a href="placements.html">Placements</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="faculties.html">Faculties</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="fixed">
+            <a href="#nav"><button>&#8593;</button></a>
+        </div>
+
+        <h1>Admission Inquiry Form 2024</h1>
+        <form>
+            <input type="text" placeholder="Enter Name" required>
+            <input type="email" placeholder="Enter Email Address" required>
+            <input type="number" placeholder="Enter Mobile Number" required maxlength="10" minlength="10">
+            <input type="text" placeholder="Enter City" required>
+            <input type="text" placeholder="Enter State" required>
+            <input type="text" placeholder="Enter Country" required>
+            <select name="school" required>
+                <option value="default">Select School</option>
+                <option value="sot">SoT</option>
+                <option value="soet">SoET</option>
+                <option value="sls">SLS</option>
+                <option value="som">SoM</option>
+            </select>
+            <select name="branch" required>
+                <option value="default">Select Branch</option>
+                <option value="Computer">Computer Engineering</option>
+                <option value="ICT">ICT</option>
+                <option value="ECE">ECE</option>
+                <option value="BCom">B.Com</option>
+                <option value="MBA">MBA</option>
+            </select>
+            <input type="submit" id="submit">
+        </form>
+    </main>
+
+    <footer>
+        <div class="headings">
+            <div class="first-heading">
+                <h4>About University</h4>
+                <a href="#">About</a>
+                <a href="#">University Policies</a>
+                <a href="#">Vision & Mission</a>
+                <a href="#">Governance</a>
+                <a href="#">Research</a>
+                <a href="#">Internationalization</a>
+                <a href="#">IQAC</a>
+            </div>
+            <div class="second-heading">
+                <h4>Academics</h4>
+                <a href="#">Our Schools</a>
+                <a href="#">Courses</a>
+                <a href="#">Faculty and Staff</a>
+                <a href="#">Internships</a>
+                <a href="#">Workshops & Conferences</a>
+                <a href="#">Library</a>
+                <a href="#">Guest Speakers</a>
+                <a href="#">Centres of Excellence</a>
+            </div>
+            <div class="third-heading">
+                <h4>Emergency Info</h4>
+                <a href="#">Centre for Counselling Services</a>
+                <a href="#">Anit Ragging</a>
+                <a href="#">Women's Cell</a>
+            </div>
+            <div class="forth-heading">
+                <h4>Factsheet</h4>
+                <a href="#">Mandatory Discloures</a>
+                <a href="#">Recognitions</a>
+                <a href="#">Institutional Distinctiveness</a>
+                <a href="#">University Act</a>
+            </div>
+            <div class="fifth-heading">
+                <h4>Quick Links</h4>
+                <a href="#">Careers</a>
+                <a href="#">Placements</a>
+                <a href="#">Student Activities</a>
+                <a href="#">Tender Notice</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Term of Use</a>
+                <a href="#">Sitemap</a>
+                <a href="#">Screen Reader Access</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

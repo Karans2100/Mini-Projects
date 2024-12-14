@@ -1,0 +1,190 @@
+:root {
+    --NAVBGCOLOR: #a51c30;
+    --NAVCOLOR: #fff;
+    --CARDBGCOLOR: #f9f3e9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+nav {
+    background-color: var(--NAVBGCOLOR);
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 8px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    gap: 10px;
+}
+
+#second-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+
+li img {
+    height: 70px;
+    margin: 0;
+
+}
+
+li a {
+    text-decoration: none;
+    color: var(--NAVCOLOR);
+    font-size: 2rem;
+}
+
+li a:visited {
+    text-decoration: none;
+    color: var(--NAVCOLOR);
+}
+
+main img {
+    height: auto;
+    width: 100%;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.fixed button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--NAVBGCOLOR);
+    color: var(--NAVCOLOR);
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+
+.faculties {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.card {
+    width: 310px;
+    height: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: none;
+    border-radius: -10px;
+}
+
+.card:hover {
+    border-right: 5px solid var(--NAVBGCOLOR);
+    border-radius: 10px;
+}
+
+.image img {
+    width: 10rem;
+    height: 10rem;
+    min-width: 90px;
+    border-radius: 50%;
+}
+
+.info h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.department {
+    color: #999;
+    font-weight: bolder;
+    padding-right: 25px;
+    font-size: 18px;
+}
+
+.designation {
+    color: var(--NAVBGCOLOR);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #202020;
+    color: white;
+    padding-bottom: 70px;
+}
+
+footer .headings {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+footer .headings h4 {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.first-heading, .second-heading, .third-heading, .forth-heading, .fifth-heading {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .headings a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+footer .headings a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    #second-list {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .faculties {
+        flex-direction: column;
+        align-items: center;
+    }
+}

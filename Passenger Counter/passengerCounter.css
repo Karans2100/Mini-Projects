@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    padding: 2px;
+}
+
+main {
+    margin-left: 40%;
+    margin-right: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#incr {
+    background-color: darkred;
+    color: whitesmoke;  
+}
+
+#save {
+    background-color: darkgreen;
+    color: whitesmoke;
+} 
